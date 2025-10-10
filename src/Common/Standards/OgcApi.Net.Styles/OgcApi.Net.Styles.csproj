@@ -8,9 +8,9 @@
 
   <PropertyGroup>
 	<GenerateDocumentationFile>true</GenerateDocumentationFile>
-	<Title>Schemas standard implementation for OGC API</Title>
-	<Description>Schemas standard implementation for OGC API in ASP.NET Core applications</Description>
-	<Authors>Danila Glazkov, Nikolay Chupshev</Authors>
+	<Title>OGC API - Styles standard implementation</Title>
+	<Description>Styles standard implementation for OGC API in ASP.NET Core applications</Description>
+	<Authors>Aleksei Mishkin</Authors>
 	<Company>SAMIS</Company>
 	<Product>OgcApi.Net</Product>
 	<Copyright>Copyright © 2025 SAMIS</Copyright>
@@ -21,11 +21,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\OgcApi.Net\OgcApi.Net.csproj" />
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.3.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="README.md" Pack="true" PackagePath="\" />
+    <ProjectReference Include="..\..\OgcApi.Net\OgcApi.Net.csproj" />
   </ItemGroup>
 
 </Project>
